@@ -74,12 +74,12 @@ h3{
 .v-reposition-container{
     position: absolute;
     left: 0;
-    width: 100vw;
+    width: 200vw;
 }
 .h-reposition-container{
     width: 100vw;
     position: relative;
-    top: 100vh;
+    top: 10vh;
 }
 /* <===================NAVBAR===================> */
 
@@ -179,7 +179,7 @@ a:hover{
     justify-content: space-between;
 }
 .home-img{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic1.jpg?alt=media&token=5dbf5af2-354b-464c-9db2-7da57b484eda);
+    background-image: url(https://downloader.disk.yandex.ru/preview/0bbde627bc4452357b88a64f1710b561259ea830f708d3b809057f8922d706c4/69651d07/ZNWdrAOMLBXYARSuMFYeOF4NPt_mM2Pfe1c6ObY6k4Gmzn3_HStTtiF_lZa-nk4g7bFP3Y9lo4p3fZ8WCR8ZBg%3D%3D?uid=0&filename=2025-12-28%2011-31-25.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=3024x1600);
     background-size: cover;
     background-position: center;
 }
@@ -214,7 +214,7 @@ a:hover{
     background-color: var(--grey-color-light);
     float: left;
     position: relative;
-    top: -30vh;
+    top: 60vh;
     width: 100%;
     backdrop-filter: blur(4px);
     padding: 8vh var(--horizontal-margin-spacing);
@@ -276,7 +276,7 @@ a:hover{
 @media (max-width:1000px){
     .h-reposition-container{
         position: relative;
-        top: 0;
+        top: -10vh;
     }
     #story{
         flex-direction: column;
@@ -298,7 +298,7 @@ a:hover{
 
 .gallery{
     display: flex;
-    padding: 20vh 0;
+    padding: 195vh 0;
     justify-content: center;
     align-items: center;
 }
@@ -310,15 +310,15 @@ a:hover{
     background-position: center;
 }
 .gallery-img:nth-child(1){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic3.jpg?alt=media&token=32a76585-cbeb-41f5-8921-6ad1ff60aa79);
+    background-image: url(https://1.downloader.disk.yandex.ru/preview/b075e7ec22a9f1f6cb63f3688632463e398db81cad2bc4e3d0d2620ad92e27cd/inf/truYTAawU9vyBknBIa_NEC3IGevCUa3-ceuCqzGy5u9-d634YlPxlRCSoBB3Ud-Njh8ZkBe7MVtkQHT1O3K2rw%3D%3D?uid=967233472&filename=2025-12-28%2011-37-25.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=967233472&tknv=v3&size=3024x1600);
     background-position-x: right;
 }
 .gallery-img:nth-child(3){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic4.jpg?alt=media&token=3bde5693-e5c8-412d-bd47-1ef972258406);
+    background-image: url(https://1.downloader.disk.yandex.ru/preview/7e0a2e7415d390d54b557873ffa0852bb92bea6bec01517381916794c42f397b/inf/IgLPLkdf-fYpPwHqXF6M_FYGyzXL8C4xB37RagbrS-64pAxrrBi7UaZRC2FiWFHqLKlm3MGCdwK2qGKqZpZW3g%3D%3D?uid=967233472&filename=2025-12-28%2011-40-23.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=967233472&tknv=v3&size=3024x1600);
 }
 .gallery-img:nth-child(2){
     background-position-y: top;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic5.jpg?alt=media&token=d9ef9475-ec6d-41ca-8cfd-3e45b70139d3);
+    background-image: url(https://1.downloader.disk.yandex.ru/preview/9435bc7ce2a238de8f9b8b3369455ba4a8349e05b2b9c4f08803e4f3fca1e3e3/inf/on2s29zAuPmohu91NARIni3IGevCUa3-ceuCqzGy5u-uuiyWMLKso1aq41SeOKMYC2hSqm164i5UiE8aYHD3Kw%3D%3D?uid=967233472&filename=2025-12-28%2011-36-54.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=967233472&tknv=v3&size=3024x1600);
 }
 @media (max-width:1000px){
     .gallery{
@@ -357,102 +357,6 @@ a:hover{
     }
 }
 
-/* <===================HANDS===================> */
-
-.hands{
-    height: 120vh;
-    width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic6.jpg?alt=media&token=febecde7-9479-4a1e-8402-28f021228422);
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-    /* <===================STAY===================> */
-    #stay{
-        background-color: var(--grey-color);
-        padding: 10vh var(--horizontal-margin-spacing);
-        width: 100%;
-}
-.stay-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20vh 0;
-}
-.stay-item .text{
-    margin: 20px 0;
-}
-.links{
-    cursor: pointer;
-    text-decoration: underline;
-}
-@media (max-width:1000px){
-    .stay-container{
-        flex-direction: column;
-        margin: 10px 0;
-    }
-    .stay-item{
-        margin: 2vh 0;
-    }
-}
-
-/* <===================REGISTRY===================> */
-
-#registry{
-    padding: 20vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing); 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.registry-container{
-    display: block;
-    width: 30vw;
-}
-.registry-container .text{
-    text-align: justify;
-    margin: 20px 0;
-}
-.registry-img{
-    display: block;
-    height: 100vh;
-    width: 40vw;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic7.jpg?alt=media&token=79b8d974-04ff-4b2d-bed5-82638399b34e);
-    background-size: cover;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-}
-.registry-img-sm{
-    display: none;
-}
-.registry-img-lg{
-    display: block;
-}
-@media (max-width:1000px){
-    #registry{
-        flex-direction: column;
-    }
-    .registry-img{
-        width: 100%;
-        height: 50vh;
-    }
-    .registry-img-sm{
-        margin-top: 10vh;
-        display: block;
-    }
-    .registry-img-lg{
-        display: none;
-    }
-    .registry-container{
-        width: 100%;
-    }
-    #registry button{
-        margin-inline: auto;
-    }
-}
-
 
 /* <===================PARTING MESSAGE===================> */
 .parting-message h1{
@@ -461,18 +365,4 @@ a:hover{
 }
 .parting-message button{
     margin:  10vh auto;
-}
-
-/* <===================FOOTER===================> */
-
-footer{
-    margin-top: 20vh;
-    height: fit-content;
-    width: 100%;
-    background-color: var(--grey-color);
-    padding: 10vh 30px;
-}
-footer h2{
-    font-size: 2Srem;
-    font-weight: normal;
 }

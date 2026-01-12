@@ -1,6 +1,4 @@
 const parallax = document.getElementById("home-img-lg");
-const parallax1 = document.getElementById("parallax1");
-const parallax2 = document.getElementById("parallax2");
 
 window.addEventListener("scroll", function()
 {
@@ -45,4 +43,4 @@ for (var i = 0; i < reveals.length; i++) {
     }
 }
   
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal, { passive: true });
