@@ -225,7 +225,7 @@ a:hover{
     margin: 8vh 0;
 }
 .timeline-img{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic2.jpg?alt=media&token=7a0e5f94-d68e-4d32-bd3b-2a82b7acd40c);
+    background-image: url(https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/timeline.jpeg);
     height: 70vh;
     width: 30vw;
     background-position: center;
@@ -310,15 +310,15 @@ a:hover{
     background-position: center;
 }
 .gallery-img:nth-child(1){
-    background-image: url(https://1.downloader.disk.yandex.ru/preview/b075e7ec22a9f1f6cb63f3688632463e398db81cad2bc4e3d0d2620ad92e27cd/inf/truYTAawU9vyBknBIa_NEC3IGevCUa3-ceuCqzGy5u9-d634YlPxlRCSoBB3Ud-Njh8ZkBe7MVtkQHT1O3K2rw%3D%3D?uid=967233472&filename=2025-12-28%2011-37-25.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=967233472&tknv=v3&size=3024x1600);
+    background-image: url(https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/1.JPG);
     background-position-x: right;
 }
 .gallery-img:nth-child(3){
-    background-image: url(https://1.downloader.disk.yandex.ru/preview/7e0a2e7415d390d54b557873ffa0852bb92bea6bec01517381916794c42f397b/inf/IgLPLkdf-fYpPwHqXF6M_FYGyzXL8C4xB37RagbrS-64pAxrrBi7UaZRC2FiWFHqLKlm3MGCdwK2qGKqZpZW3g%3D%3D?uid=967233472&filename=2025-12-28%2011-40-23.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=967233472&tknv=v3&size=3024x1600);
+    background-image: url(https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/2.JPG);
 }
 .gallery-img:nth-child(2){
     background-position-y: top;
-    background-image: url(https://1.downloader.disk.yandex.ru/preview/9435bc7ce2a238de8f9b8b3369455ba4a8349e05b2b9c4f08803e4f3fca1e3e3/inf/on2s29zAuPmohu91NARIni3IGevCUa3-ceuCqzGy5u-uuiyWMLKso1aq41SeOKMYC2hSqm164i5UiE8aYHD3Kw%3D%3D?uid=967233472&filename=2025-12-28%2011-36-54.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=967233472&tknv=v3&size=3024x1600);
+    background-image: url(https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/3.JPG);
 }
 @media (max-width:1000px){
     .gallery{
