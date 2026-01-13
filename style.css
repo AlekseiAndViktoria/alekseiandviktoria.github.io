@@ -74,7 +74,7 @@ h3{
 .v-reposition-container{
     position: absolute;
     left: 0;
-    width: 200vw;
+    width: 100vw;
 }
 .h-reposition-container{
     width: 100vw;
@@ -179,7 +179,7 @@ a:hover{
     justify-content: space-between;
 }
 .home-img{
-    background-image: url(https://downloader.disk.yandex.ru/preview/0bbde627bc4452357b88a64f1710b561259ea830f708d3b809057f8922d706c4/69651d07/ZNWdrAOMLBXYARSuMFYeOF4NPt_mM2Pfe1c6ObY6k4Gmzn3_HStTtiF_lZa-nk4g7bFP3Y9lo4p3fZ8WCR8ZBg%3D%3D?uid=0&filename=2025-12-28%2011-31-25.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=3024x1600);
+    background-image: url(https://downloader.disk.yandex.ru/preview/a030bdb1325c1c3844b89f7ef020555b4c74faebae57fcb3afc4e8cf71fba01d/696662dd/ZNWdrAOMLBXYARSuMFYeOF4NPt_mM2Pfe1c6ObY6k4Gmzn3_HStTtiF_lZa-nk4g7bFP3Y9lo4p3fZ8WCR8ZBg%3D%3D?uid=0&filename=2025-12-28%2011-31-25.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=2048x2048);
     background-size: cover;
     background-position: center;
 }
