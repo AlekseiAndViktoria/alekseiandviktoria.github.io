@@ -6,26 +6,9 @@ window.addEventListener("scroll", function()
     parallax.style.backgroundPositionX = offset*(-0.3)-100 + "px";
 })
 
-
-window.addEventListener("scroll", function()
-{
-    let offset = window.pageYOffset;
-    offset-=3100;
-    parallax1.style.backgroundPositionY = offset*(0.1) + "px";
-})
-
-window.addEventListener("scroll", function()
-{
-    let offset = window.pageYOffset;
-    offset-=4800;
-    parallax2.style.backgroundPositionY = offset*(-0.1) + "px";
-})
-
 function myFunction() {
     document.getElementById("check").checked = false;
   }
-
-
   
 function reveal() {
 var reveals = document.querySelectorAll(".reveal");
@@ -33,7 +16,7 @@ var reveals = document.querySelectorAll(".reveal");
 for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 100;
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
