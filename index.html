@@ -386,44 +386,94 @@
             </div>
         </div>
 
-        <!-- блок с фотографиями -->
-        <!-- блок с фотографиями: 3 фото + один общий разрез сверху/снизу -->
-        <div style="position:relative; display:block; width:100%; margin:0 auto; overflow:hidden; line-height:0;">
+        <!-- COVER -->
+        <div class="cover">
+            <img class="cover__cut cover__cut--top" src="cover-rot180.svg" alt="" aria-hidden="true">
 
-            <!-- верхний разрез (общий) -->
-            <img src="cover-rot180.svg" alt=""
-                style="position:absolute; left:0; width:100%; height:14%; z-index:0; pointer-events:none; display:block;">
-
-            <!-- 3 фото (на мобилке будет 1 колонка, на десктопе 3 — через @media выше) -->
-            <div id="photoStripGrid" style="display:grid; grid-template-columns:1fr; gap:0; padding-bottom: 1%;">
-                <img src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/sit.jpg" alt=""
-                    style="display:block; width:100%; height:100%; object-fit:cover; aspect-ratio:3/4;">
-                <img src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/view.jpg" alt=""
-                    style="display:block; width:100%; height:100%; object-fit:cover; aspect-ratio:3/4;">
-                <img src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/stand.jpg"
-                    alt="" style="display:block; width:100%; height:100%; object-fit:cover; aspect-ratio:3/4;">
+            <div id="photoStripGrid" class="cover__grid">
+                <img class="cover__photo"
+                    src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/sit.jpg" alt="">
+                <img class="cover__photo"
+                    src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/view.jpg" alt="">
+                <img class="cover__photo"
+                    src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/stand.jpg"
+                    alt="">
             </div>
 
-            <!-- нижний разрез (общий) -->
-            <img src="cover.svg" alt=""
-                style="position:absolute; left:0; bottom:-10%; width:100%; z-index:2; pointer-events:none; display:block;">
-
+            <img class="cover__cut cover__cut--bottom" src="cover.svg" alt="" aria-hidden="true">
         </div>
+
         <style>
-            /* Мобилка: показываем только первую фотку */
+            .cover {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                background: #000;
+            }
+
+            .cover__grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0;
+                background: #000;
+            }
+
+            .cover__photo {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .cover__cut {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: auto;
+                pointer-events: none;
+                display: block;
+                z-index: 2;
+            }
+
+            /* TOP */
+            .cover__cut--top {
+                top: -1px;
+                transform: scaleY(0.5);
+                transform-origin: top;
+            }
+
+            /* BOTTOM (mobile/Safari seam fix) */
+            .cover__cut--bottom {
+                bottom: -10px;
+                /* перекрываем низ с запасом */
+                transform: scaleY(0.6);
+                /* увеличиваем, чтобы не было щели 1–2px */
+                transform-origin: bottom;
+                will-change: transform;
+            }
+
             @media (max-width: 979px) {
                 #photoStripGrid img:nth-of-type(n+2) {
                     display: none !important;
                 }
             }
 
-            /* Десктоп: 3 фото в ряд */
             @media (min-width: 980px) {
-                #photoStripGrid {
-                    grid-template-columns: repeat(3, 1fr) !important;
+                .cover__grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                .cover__photo {
+                    aspect-ratio: 3 / 4;
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         </style>
+
+
+
 
         <!-- Тайминг-->
         <section class="wedding-tl" aria-label="Тайминг свадебного дня">
@@ -719,12 +769,12 @@
                 }
             </style>
         </section>
-
+ 
+ 
         <!-- блок с фотографиями для телефона -->
         <div class="mobilePhoto" style="position:relative; width:100%; margin:0 auto; overflow:hidden; line-height:0;">
 
-            <img src="cover-rot180.svg" alt=""
-                style="position:absolute; left:0; width:100%; height:14%; z-index:0; pointer-events:none;">
+           <img class="cover__cut cover__cut--top" src="cover-rot180.svg" alt="" aria-hidden="true">
 
             <div id="photoStripGrid" style="padding-bottom: 1%;">
                 <img src="https://raw.githubusercontent.com/AlekseiAndViktoria/TildaTemplate/main/photo/view.jpg" alt=""
@@ -732,9 +782,7 @@
             </div>
 
             <!-- нижний разрез (общий) -->
-            <img src="cover.svg" alt=""
-                style="position:absolute; left:0; bottom:-10%; width:100%; z-index:2; pointer-events:none; display:block;">
-
+           <img class="cover__cut cover__cut--bottom" src="cover.svg" alt="" aria-hidden="true">
         </div>
         <style>
             @media (min-width: 980px) {
