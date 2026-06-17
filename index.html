@@ -958,72 +958,90 @@
         </div>
 
 
-        <div class="t467">
-            <div class="t-container t-align_center">
-                <div class="t-col t-col_10 t-prefix_1">
-                    <div class="t467__descr t-descr t-descr_xl t-margin_auto" field="descr">
-                        <p style="text-align: center;">
-                            <span style="font-size:25px;font-family: Georgia; color: rgb(169, 159, 151);">Просьба подтвердить ваше присутствие до 1 июня.</span>
-                        </p>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="rec736174833" class="r t-rec t-rec_pb_0" style="padding-bottom:0px; " data-animationappear="off"
-            data-record-type="205">
+        <div id="rec736174833" class="finalCover">
             <!-- cover -->
-            <div class="t-cover" id="recorddiv736174833" bgimgfield="img"
-                style="height:100vh;background-image:url('https://static.tildacdn.info/tild3737-6532-4136-b639-656632396432/-/resize/20x/bamboo-garden.jpeg');">
-                <div class="t-cover__carrier" id="coverCarry736174833" data-content-cover-id="736174833"
-                    data-content-cover-bg="https://static.tildacdn.info/tild3737-6532-4136-b639-656632396432/bamboo-garden.jpeg"
-                    data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax="fixed"
-                    data-content-use-image-for-mobile-cover="" style="height:100vh; " itemscope
-                    itemtype="http://schema.org/ImageObject">
-                    <meta itemprop="image"
-                        content="https://static.tildacdn.info/tild3737-6532-4136-b639-656632396432/bamboo-garden.jpeg">
-                </div>
-                <div class="t-cover__filter"
-                    style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.40));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.40));background-image: -o-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.40));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.40));background-image: linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.40));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66000000', endColorstr='#99000000');">
-                </div>
-                <div class="t-container">
-                    <div class="t-width t-width_12" style="margin:0 auto;">
-                        <div class="t-cover__wrapper t-valign_middle"
-                            style="height:100vh; position: relative;z-index:1;">
-                            <div class="t182">
-                                <div data-hook-content="covercontent">
-                                    <div class="t182__wrapper">
-                                        <div class="t182__descr t-descr t-descr_lg" field="descr">
-                                            <div style="font-size: 20px;" data-customstyle="yes">
-                                                <span style="font-family: Georgia;">ЖДЁМ ВАС!
-                                                    <br>
-                                                    <br>
-                                                    Контакты: 
-                                                    <br>
-                                                    По всем вопросам, касающимся торжества, вы можете
-                                                    обратиться к нашему организатору - Ольге
-                                                    +79081413121</span>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="finalCover__bg"></div>
+            <div class="finalCover__filter"></div>
+            <div class="finalCover__content">
+                <p class="finalCover__rsvp">Просьба подтвердить ваше присутствие до 1 июня.</p>
+                <div class="finalCover__text">
+                    ЖДЁМ ВАС!
+                    <br>
+                    <br>
+                    Контакты:
+                    <br>
+                    По всем вопросам, касающимся торжества, вы можете
+                    обратиться к нашему организатору - Ольге
+                    +79081413121
                 </div>
             </div>
+
             <style>
-                #rec736174833 .t182__title {
-                    font-family: 'Georgia';
+                #rec736174833.finalCover {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100vh;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
-                #rec736174833 .t182__descr {
-                    font-family: 'Georgia';
+                #rec736174833 .finalCover__bg {
+                    position: absolute;
+                    inset: 0;
+                    background-image: url('https://static.tildacdn.info/tild3737-6532-4136-b639-656632396432/bamboo-garden.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 0;
+                }
+
+                #rec736174833 .finalCover__filter {
+                    position: absolute;
+                    inset: 0;
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.40));
+                    z-index: 1;
+                }
+
+                #rec736174833 .finalCover__content {
+                    position: relative;
+                    z-index: 2;
+                    width: 100%;
+                    max-width: 900px;
+                    padding: 60px 20px;
+                    text-align: center;
+                    color: #f6f0eb;
+                    font-family: 'Georgia', serif;
+                }
+
+                #rec736174833 .finalCover__rsvp {
+                    margin: 0 0 50px;
+                    font-size: 25px;
+                    line-height: 1.4;
+                    color: #f6f0eb;
+                }
+
+                #rec736174833 .finalCover__text {
+                    margin: 0;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    color: #f6f0eb;
+                }
+
+                @media screen and (max-width: 640px) {
+                    #rec736174833 .finalCover__content {
+                        padding: 40px 16px;
+                    }
+
+                    #rec736174833 .finalCover__rsvp {
+                        font-size: 21px;
+                        margin-bottom: 36px;
+                    }
+
+                    #rec736174833 .finalCover__text {
+                        font-size: 18px;
+                    }
                 }
             </style>
         </div>
