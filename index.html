@@ -120,80 +120,150 @@
 <body class="t-body" style="margin:0;">
     <!--allrecords-->
     <div id="allrecords" class="t-records">
-        <div id="rec736174825" class="r t-rec" style=" " data-record-type="415">
-            <!-- t415 -->
+        <div id="rec736174825" class="r">
             <!-- cover -->
-            <div class="t-cover" id="recorddiv736174825" bgimgfield="img"
-                style="height:100vh;background-image:url('https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/main.JPG');">
-                <div class="t-cover__carrier" id="coverCarry736174825" data-content-cover-id="736174825"
-                    data-content-cover-bg="https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/main.JPG"
-                    data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax="dynamic"
-                    data-content-use-image-for-mobile-cover="" style="height:100vh;background-attachment:scroll;"
-                    itemscope itemtype="http://schema.org/ImageObject">
-                    <meta itemprop="image"
-                        content="https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/main.JPG">
-                </div>
-                <div class="t-cover__filter"
-                    style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: -o-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#99000000', endColorstr='#66000000');">
-                </div>
-                <div class="t415">
-                    <div class="t-container">
-                        <div class="t-width t-width_12 t415__mainblock">
-                            <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
-                                <div class="t415__content" data-hook-content="covercontent">
-                                    <div class="t415__textwrapper t-width t-width_10">
-                                        <div class="t415__uptitle t-uptitle t-uptitle_md" field="subtitle">
-                                            <div style="font-size: 30px; line-height: 90px;" data-customstyle="yes">
-                                            </div>
-                                        </div>
-                                        <div class="t415__title t-title t-title_md" field="title">
-                                            <div style="font-size: 82px;" data-customstyle="yes">
-                                                <br />
-                                                Алексей <span style="color: rgb(246, 240, 235); font-family: Georgia;">♡
-                                                </span>
-                                                Виктория
-                                            </div>
-                                        </div>
-                                        <div class="t415__descr t-descr t-descr_md" field="descr">
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <strong style="font-family: Georgia;">Так далеко все зашло – мы
-                                                женимся!</strong>
-                                        </div>
-                                    </div>
-                                    <div id="t415__timer736174825" class="t415__timer">
-                                        <div class="t415__col ">
-                                            <span class="t415__days t-title t-title_lg t415__number"
-                                                style="color: #f6f0eb"></span>
-                                            <div class="t415__text t-descr t-descr_xxs" style="color: #f6f0eb">дней
-                                            </div>
-                                        </div>
-                                        <div class="t415__col">
-                                            <span class="t415__hours t-title t-title_lg t415__number"
-                                                style="color: #f6f0eb"></span>
-                                            <div class="t415__text t-descr t-descr_xxs" style="color: #f6f0eb">часов
-                                            </div>
-                                        </div>
-                                        <div class="t415__col">
-                                            <span class="t415__minutes t-title t-title_lg t415__number"
-                                                style="color: #f6f0eb"></span>
-                                            <div class="t415__text t-descr t-descr_xxs" style="color: #f6f0eb">минут
-                                            </div>
-                                        </div>
-                                        <div class="t415__col">
-                                            <span class="t415__seconds t-title t-title_lg t415__number"
-                                                style="color: #f6f0eb"></span>
-                                            <div class="t415__text t-descr t-descr_xxs" style="color: #f6f0eb">секунд
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="wedding-cover">
+                <div class="wedding-cover__filter"></div>
+                <div class="wedding-cover__content">
+                    <div class="wedding-cover__title">
+                        Алексей <span class="wedding-cover__heart">♡</span> Виктория
+                    </div>
+                    <div class="wedding-cover__descr">
+                        Так далеко все зашло – мы женимся!
+                    </div>
+                    <div id="t415__timer736174825" class="wedding-cover__timer">
+                        <div class="wedding-cover__col">
+                            <span class="t415__days wedding-cover__number"></span>
+                            <div class="wedding-cover__text">дней</div>
+                        </div>
+                        <div class="wedding-cover__col">
+                            <span class="t415__hours wedding-cover__number"></span>
+                            <div class="wedding-cover__text">часов</div>
+                        </div>
+                        <div class="wedding-cover__col">
+                            <span class="t415__minutes wedding-cover__number"></span>
+                            <div class="wedding-cover__text">минут</div>
+                        </div>
+                        <div class="wedding-cover__col">
+                            <span class="t415__seconds wedding-cover__number"></span>
+                            <div class="wedding-cover__text">секунд</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <style>
+                #rec736174825 .wedding-cover {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100vh;
+                    background-image: url('https://raw.githubusercontent.com/AlekseiAndViktoria/alekseiandviktoria.github.io/main/photo/main.JPG');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+
+                #rec736174825 .wedding-cover__filter {
+                    position: absolute;
+                    inset: 0;
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.60));
+                    z-index: 1;
+                }
+
+                #rec736174825 .wedding-cover__content {
+                    position: relative;
+                    z-index: 2;
+                    width: 100%;
+                    max-width: 900px;
+                    padding: 40px 20px;
+                    text-align: center;
+                    color: #f6f0eb;
+                    font-family: 'Georgia', serif;
+                }
+
+                #rec736174825 .wedding-cover__title {
+                    font-size: 70px;
+                    line-height: 1.1;
+                    font-weight: 400;
+                    color: #f6f0eb;
+                }
+
+                #rec736174825 .wedding-cover__heart {
+                    color: rgb(246, 240, 235);
+                }
+
+                #rec736174825 .wedding-cover__descr {
+                    margin-top: 40px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #f6f0eb;
+                }
+
+                #rec736174825 .wedding-cover__timer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 30px;
+                    margin-top: 60px;
+                }
+
+                #rec736174825 .wedding-cover__col {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    min-width: 70px;
+                }
+
+                #rec736174825 .wedding-cover__number {
+                    font-size: 50px;
+                    line-height: 1;
+                    color: #f6f0eb;
+                    font-variant-numeric: tabular-nums;
+                }
+
+                #rec736174825 .wedding-cover__text {
+                    margin-top: 8px;
+                    font-size: 14px;
+                    color: #f6f0eb;
+                }
+
+                @media screen and (max-width: 900px) {
+                    #rec736174825 .wedding-cover__title {
+                        font-size: 36px;
+                    }
+
+                    #rec736174825 .wedding-cover__number {
+                        font-size: 34px;
+                    }
+
+                    #rec736174825 .wedding-cover__timer {
+                        gap: 16px;
+                        margin-top: 40px;
+                    }
+
+                    #rec736174825 .wedding-cover__col {
+                        min-width: 56px;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    #rec736174825 .wedding-cover__title {
+                        font-size: 30px;
+                    }
+
+                    #rec736174825 .wedding-cover__descr {
+                        font-size: 18px;
+                        margin-top: 30px;
+                    }
+
+                    #rec736174825 .wedding-cover__number {
+                        font-size: 28px;
+                    }
+                }
+            </style>
             <script type="text/javascript">
                 t_onReady(function () {
                     function getTimeRemaining(endtime) {
@@ -271,56 +341,6 @@
                     initializeClock('t415__timer736174825', deadline);
                 });
             </script>
-            <style>
-                #rec736174825 .t415__descr-second,
-                #rec736174825 .t415__hint {
-                    color: #f6f0eb;
-                }
-            </style>
-            <style>
-                #rec736174825 .t415__uptitle {
-                    color: #f6f0eb;
-                    font-family: 'Georgia';
-                }
-
-                #rec736174825 .t415__title {
-                    color: #f6f0eb;
-                    font-family: 'Georgia';
-                }
-
-                @media screen and (min-width: 900px) {
-                    #rec736174825 .t415__title {
-                        font-size: 70px;
-                    }
-                }
-
-                @media screen and (min-width: 480px) and (max-width:900px) {
-                    #rec736174825 .t415__title {
-                        font-size: 30px;
-                    }
-                }
-
-                @media screen and (max-width: 480px),
-                (orientation:landscape) and (max-height:480px) {
-                    #rec736174825 .t415__title {
-                        font-size: 30px;
-                    }
-                }
-
-                #rec736174825 .t415__descr {
-                    color: #f6f0eb;
-                    font-family: 'Georgia';
-                }
-
-                #rec736174825 .t415__descr-second {
-                    color: #f6f0eb;
-                    font-family: 'Georgia';
-                }
-
-                #rec736174825 .t415__hint {
-                    font-family: 'Georgia';
-                }
-            </style>
         </div>
         <div id="rec736174826" class="r t-rec" style="background-color:#6b8ab0; " data-record-type="602"
             data-bg-color="#6b8ab0">
